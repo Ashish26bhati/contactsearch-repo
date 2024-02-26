@@ -42,7 +42,7 @@ const App = () => {
         </form>
       </section>
       <section className="ml-20 mr-20 mt-10 grid  md:grid-cols-4  sm:grid-cols-2 gap-6">
-      {isLoading ? ( <img className=" text-center" src={loading} alt="loading"/> ): ( <ContactCards contactList={contactList} />)}
+      {isLoading ? ( <img  src={loading} alt="loading"/> ): ( <ContactCards contactList={contactList} />)}
       </section>
       <section className="ml-20 mr-20">
         {contactList?.length < 1 && <h1 className=" bg-white shadow-md p-7 rounded-md  text-red-600 font-semibold ">No Data Mathes for your Search</h1>}
